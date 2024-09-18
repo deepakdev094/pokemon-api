@@ -1,0 +1,62 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes */
+.btn {
+    @apply bg-indigo-950 hover:bg-indigo-900 text-sm text-white font-bold py-2 px-5 rounded mt-4;
+}
+
+.heading {
+    @apply text-xl font-bold text-center uppercase tracking-wide text-indigo-950 mb-6;
+}
+
+.scroll-main {
+    @apply max-w-4xl mx-auto border rounded-lg bg-gray-50 shadow text-black py-4;
+}
+
+.scroll-data {
+    @apply  px-5;
+}
+
+.table {
+    @apply relative table-fixed w-full text-center border-collapse;
+}
+
+.table-header {
+    @apply sticky top-0 uppercase bg-indigo-950 text-center text-white text-sm px-4 py-2 first:rounded-ss-md last:rounded-tr-md;
+}
+
+.table-row {
+    @apply transition border border-gray-200 ease-in odd:bg-slate-50 even:bg-slate-100 hover:bg-indigo-100;
+}
+
+.table-cell {
+    @apply px-4 py-2;
+}
+
+.table-cell-text {
+    @apply h-16 capitalize text-sm text-blue-950 hover:text-white group-hover:text-indigo-900 group-hover:font-bold;
+}
+
+.img-small {
+    @apply h-12 w-12 mx-auto;
+}
+
+.footer {
+    @apply flex justify-center border-t mt-3;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
